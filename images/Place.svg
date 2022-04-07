@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67" width="67" height="67">
+	<title>TESTIMONY</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #414141;stroke: #3172b9;paint-order:stroke fill markers;stroke-width: 4 } 
+	</style>
+	<g id="TESTIMONY">
+		<g id="Cust 02">
+			<g id="Profile">
+				<g id="Profile Picture">
+					<path id="Place your image here" class="shp0" d="M33.55 1.91C50.83 1.91 64.84 16 64.84 33.37C64.84 50.75 50.83 64.84 33.55 64.84C16.26 64.84 2.25 50.75 2.25 33.37C2.25 16 16.26 1.91 33.55 1.91Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
