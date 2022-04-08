@@ -115,3 +115,106 @@ html{
 }
 
 
+.section-clients{
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+
+.section-clients-list{
+	display: flex;
+}
+.section-clients-list-item{
+	flex: 1 1 33.33%;
+}
+.section-clients-list-item:not(:last-child){
+	margin-right: 30px;
+}
+
+.section-clients-user{
+	display: flex;
+	align-items: center;
+}
+
+.section-clients-avatar{
+	width: 60px;
+	height: 60px;
+	margin-right: 15px;
+	border: 2px solid #3172b9;
+	border-radius: 50%;
+}
+/* Contacts */
+.section-contacts{
+	padding-top:85px;
+	padding-bottom: 95px;
+}
+
+.section-contacts-list{
+	display: flex;
+	margin-top: 43px;
+}
+.section-contacts-item{
+	flex: 1 1 33.33%;
+}
+.section-contacts-info{
+	max-width: 250px;
+}
+
+.section-contacts-icon{
+	display: block;
+	margin-bottom: 25px;
+	height: 26px;
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: auto 100%;
+	background-color: transparent;
+}
+
+.section-contacts-icon-gps{
+	background-image: url('/images/gps.png');
+}
+
+.section-contacts-icon-phone{
+	background-image: url('/images/phone.png');
+}
+.section-contacts-icon-mail{
+	background-image: url('/images/mail.png');
+	background-size: auto 19px;
+}
+.section-contacts-heading{
+	display: block;
+	margin-bottom: 40px;
+}
+
+
+
+/* footer */
+
+
+footer{
+	height: 125px;
+}
+
+.footer-container{
+	display: flex;
+	height: 100%;     /* Для того что бы работал flex */
+	align-items: center;  /* Вертикально отцентрировать */
+	justify-content: space-between;
+}
+
+.footer-left{
+	display: flex;
+	align-items: center;
+}
+
+.footer-logo{
+	margin-right: 25px;
+}
+
+.footer-nav-list{
+	display: flex;
+}
+
+.footer-nav-item:not(:last-child){
+	margin-right: 35px;
+}
+
