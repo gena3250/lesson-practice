@@ -1,4 +1,32 @@
 /* Первоначальные настройки  */
+/* open-sans-300 - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+		  url('../fonts/open-sans-v28-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/open-sans-v28-latin-300.woff') format('woff'), /* Modern Browsers */
+ }
+ /* open-sans-regular - latin */
+ @font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		  url('../fonts/open-sans-v28-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/open-sans-v28-latin-regular.woff') format('woff'), /* Modern Browsers */
+ }
+ /* open-sans-600 - latin */
+ @font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local(''),
+		  url('../fonts/open-sans-v28-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/open-sans-v28-latin-600.woff') format('woff'), /* Modern Browsers */
+ }
+
 *{
 	box-sizing: border-box;
 }
@@ -23,7 +51,7 @@ img{
 }
 
 html{
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 /* Конец */
 
@@ -36,31 +64,44 @@ html{
 
 .header-container{
 	display: flex;
-	align-items:center ;
+	align-items:center;
+	justify-content: space-between;
 	height: 100%;
 }
-.logo{
-	margin-right: auto;
-}
+
 /* Коней Лого */
 
 /* Меню */
 
 .nav-list{
 	display: flex;
+	margin: auto;
+}
+.nav-item{
+	font-size: 15px;
+	line-height: 1;    /* Если переноса строки нет ,то можно указывать 1 */
+}
+
+.nav-link{
+	color:#1c1c1c;
+}
+
+.nav-item.is-active.nav-link{
+	color: #3172b9;
 }
 .nav-item:not(:last-child){      /* Отступ для всех элементов меню,но не для последнего */
 	margin-right: 50px;
 }
 
 .header-btn{
-	margin-left: 80px;
+	margin-left: 40px;
 }
 
 .btn{
-	padding: 15px 16px;
-	font-size: 12px;
+	padding: 15px 30px;
+	font-size: 16px;
 	line-height: 1;   /* относительная единица */
+	font-weight: 600;
 	text-transform: uppercase;
 	color:white;
 	background-color: #3172b9;
@@ -69,12 +110,20 @@ html{
 	display: inline-block;   /* Иначе кнопка будет накладываться на текст */
 }
 
+.btn.btnbig{
+	padding: 20px 60px;
+}
 .text-center{
 	text-align: center;
 }
 
 
 /* Hero */
+
+.section-hero{
+	background: url('../images/Base.jpg') right center no-repeat white;
+	background-size: contain;
+}
 
 .hero-container{
 	padding-top: 120px;
@@ -85,13 +134,44 @@ html{
 }
 
 .section-hero-heading{
-	margin-bottom: 20px;
+	margin-top: 0;              /* У элемента h1 есть отступ сверху его нужно убрать */
+	margin-bottom: 30px;
+	font-size: 40px;
+	line-height: 52px;
+	font-weight: 300;
+	color: #1c1c1c;
+}
+
+.section-hero-action{
+	display: inline-block;   
 }
 .section-hero-description{
-	margin-bottom: 30px;
+	margin-bottom: 33px;
+	font-size: 16px;
+	line-height: 25px;
+	color: #787878;
+
 }
 .section-hero-btn-description{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-top: 10px;
+	font-size: 11px;
+	line-height: 1;
+	text-transform: uppercase;
+	text-align: center;
+	color: #787878;
+}
+
+.section-hero-ssl-icon{
+	display: inline-block;
+	width: 13px;
+	height: 17px;
+	margin-right: 10px;
+	background: url('../images/Shield.svg') center center no-repeat transparent;
+	background-size: contain;
+	transform: translateY(-1px);   /* Поднятие иконки по оси у */
 }
 
 /* What we do */
@@ -114,7 +194,7 @@ html{
 	margin-right: 30px;
 }
 
-
+/* section-clients */
 .section-clients{
 	padding-top: 90px;
 	padding-bottom: 100px;
